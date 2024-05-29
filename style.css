@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+nav{
+    display: flex;
+    width: 80vw;
+    height: 15vh;
+    position: fixed;
+    justify-content: space-between;
+    align-items: end;
+    z-index: 10;
+    
+}
+
+#logo{
+    width:30% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    
+}
+#navcontent{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#logoname{
+    font-size: small;
+}
+#navcontent>button{
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 20px;
+   border: none;
+    padding: 10px 20px;
+    outline: none;
+}
+
+#bodycontent{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+.splide{
+    width: 30vw;
+    height: 30vh;
+}
+.splide__slide>img{
+    width: 20vw;
+    height: 55vh;
+}
+#body{
+ 
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding:   10%;
+    background-color: rgb(208, 42, 42);
+
+}
+#leftside{
+    width: 50%;
+    
+}
+#rightside{
+    width: 40%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.splide{
+    
+    width: 23vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+   
+}
+#leftside{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#leftheading{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+#leftheading>h2{
+    color: rgb(206, 199, 190);
+    font-size: 30px;
+    font-weight: 900;
+}
+#leftheading>h3{
+    color: rgb(227, 220, 210);
+    font-weight: 800;
+}
+#leftheading>h3 span{
+    color: black;
+    font-weight:800 ;
+    margin-left: 1vw;
+}
+#leftside p{
+    width: 70%;
+    line-height: 1.8rem;
+}
+#leftside h1{
+  color: antiquewhite;
+  font-size: 40px;
+}
+#icondiv{
+    display: flex;
+    
+    
+}
+ #icondiv>*{
+   width: 3.2rem;
+   height: 3.2rem;
+   margin-right: 1rem;
+   border: 1px solid white;
+   padding: 14px;
+   border-radius: 50%;
+
+    
+} 
