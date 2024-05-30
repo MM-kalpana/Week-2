@@ -28,30 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
       </nav>
     `;
-    // leftside.innerHTML=`
-    // <div id="leftheading">
-    //       <h2>Exquisite Watches</h2>
-    //       <h3>Gold Luxury<span>Choose Us</span></h3>
-    //   </div>
-    //     <p>Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship - watch</p>
-    //     <h1>$499.00</h1>
-    //     <div id="icondiv">
-    //       <img src="./image/fb.png" alt="Facebook">
-    //       <img src="./image/twitter.png" alt="Twitter">
-    //       <img src="./image/you tube.png" alt="YouTube">
-    //     </div>
-    // `
-    // bodyEl.style.backgroundImage = 'linear-gradient(to right, rgb(245, 176, 115),rgb(255, 222, 194))'
- 
+
 });
 
-
-
-
-
-
-///fix
-
+//INTER SECTION OBSERVER
 const callback = (entries) => {
   entries.forEach(entry => {
       if (entry.isIntersecting) {
