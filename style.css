@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+body>*{
+    overflow-x: hidden;
 }
 header{
   display: flex;
@@ -51,7 +58,7 @@ nav{
 #bodycontent{
     width: 100vw;
     height: 100vh;
-    background-color: aquamarine;
+  
 }
 .splide{
     width: 30vw;
@@ -69,13 +76,13 @@ nav{
     justify-content: center;
     align-items: center;
     padding:   10%;
-    background-color: rgb(208, 42, 42);
+    
 
 }
 #leftside{
     width: 50%;
-    
 }
+
 #rightside{
     width: 40%;
     
@@ -107,13 +114,15 @@ nav{
     gap: 0.7rem;
 }
 #leftheading>h2{
-    color: rgb(206, 199, 190);
+    color: rgb(245, 243, 240);
     font-size: 30px;
     font-weight: 900;
+    font-family: "Sofia Sans", sans-serif;
 }
 #leftheading>h3{
-    color: rgb(227, 220, 210);
+    color: rgb(252, 252, 252);
     font-weight: 800;
+    font-family: "Sofia Sans", sans-serif;
 }
 #leftheading>h3 span{
     color: black;
@@ -123,9 +132,11 @@ nav{
 #leftside p{
     width: 70%;
     line-height: 1.8rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
 }
 #leftside h1{
-  color: antiquewhite;
+  color:#ffff;
   font-size: 40px;
 }
 #icondiv{
@@ -143,3 +154,82 @@ nav{
 
     
 } 
+@media screen and (max-width:810px){
+   
+    #navcontent{
+        width: 60%;
+    }
+    #leftside p{
+        width: 90%;
+        line-height: 1.4rem;
+    }
+    
+#leftheading>h2{
+    font-size: 25px;
+}
+#icondiv>*{
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: 10px;
+   
+}
+    
+}
+@media screen and (max-width:546px){
+    #body {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    #leftside{
+        width: 100%;
+        margin-top: 15%;
+        justify-content: center;
+        align-items: center;
+        height: 30rem;
+        
+    }
+    nav {
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    #rightside {
+        width: 100vw;
+
+    }
+    .splide{
+        width: 30%;
+
+    }
+}
+@media screen and (max-width:500px){
+    #navcontent{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 10px;
+        position: static;
+    }
+    #body {
+        display: flex;
+        flex-direction: column;
+        gap:20px
+    }
+    .splide img{
+        width: 100%;
+
+    }
+    #body{
+        gap:30px
+    }
+    #leftside{
+        gap:20px
+    }
+    header{
+        height: 5pvh;
+        position: fixed;
+    }
+}
