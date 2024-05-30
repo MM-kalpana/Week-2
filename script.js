@@ -37,9 +37,7 @@ const callback = (entries) => {
       if (entry.isIntersecting) {
           if (entry.target.id === "watchpink") {
               console.log("finalwork");
-              
-
-              leftside.innerHTML=""
+  leftside.innerHTML=""
   leftside.innerHTML=`
     <div id="leftheading">
           <h2>Exquisite Watches</h2>
