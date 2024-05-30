@@ -1,20 +1,20 @@
-let headerdata=[
-    {
-        imgagesrc :"./crown-solid.svg",
-        logoname:"KING",
-        navlinkone:"Shop",
-        navlinktwo:"Brands",
-        navlinkthree:"Contact Us",
-        buttion:"Sign Up"
+let headerdata = [
+  {
+    imgagesrc: "./crown-solid.svg",
+    logoname: "KING",
+    navlinkone: "Shop",
+    navlinktwo: "Brands",
+    navlinkthree: "Contact Us",
+    buttion: "Sign Up"
 
-    }
+  }
 ]
-let bodyEl=document.getElementById("body");
+let bodyEl = document.getElementById("body");
 
-let leftside=document.getElementById('leftside');
+let leftside = document.getElementById('leftside');
 const header = document.getElementById('header');
-document.addEventListener('DOMContentLoaded', function() {
-   header.innerHTML = `
+document.addEventListener('DOMContentLoaded', function () {
+  header.innerHTML = `
       <nav>
         <div id="logo">
           <div id="logoimage"><img src=${headerdata[0].imgagesrc} alt="Logo" width="25px" height="25px"></div>
@@ -34,11 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
 //INTER SECTION OBSERVER
 const callback = (entries) => {
   entries.forEach(entry => {
-      if (entry.isIntersecting) {
-          if (entry.target.id === "watchpink") {
-              console.log("finalwork");
-  leftside.innerHTML=""
-  leftside.innerHTML=`
+    if (entry.isIntersecting) {
+      if (entry.target.id === "watchpink") {
+        console.log("finalwork");
+        leftside.innerHTML = ""
+        leftside.innerHTML = `
     <div id="leftheading">
           <h2>Exquisite Watches</h2>
           <h3>Gold Luxury<span>Choose Us</span></h3>
@@ -52,13 +52,13 @@ const callback = (entries) => {
         </div>
     `
 
-              bodyEl.style.backgroundImage = 'linear-gradient(to right, rgb(245, 176, 115),rgb(255, 222, 194))'
-          }else if(entry.target.id === "blacksilver"){
-            bodyEl.style.backgroundImage = 'linear-gradient(to right, rgb(177, 181, 181),rgb(224, 224, 224))'
-             
+        bodyEl.style.backgroundImage = 'linear-gradient(to right, rgb(245, 176, 115),rgb(255, 222, 194))'
+      } else if (entry.target.id === "blacksilver") {
+        bodyEl.style.backgroundImage = 'linear-gradient(to right, rgb(177, 181, 181),rgb(224, 224, 224))'
 
-            leftside.innerHTML=""
-            leftside.innerHTML=`
+
+        leftside.innerHTML = ""
+        leftside.innerHTML = `
               <div id="leftheading">
                     <h2>Dainty Timepieces</h2>
                     <h3>Silver Luxury<span>Choose Us</span></h3>
@@ -72,11 +72,11 @@ const callback = (entries) => {
                   </div>
               `
 
-          }else if(entry.target.id === "greensilver"){
-            bodyEl.style.backgroundImage = 'linear-gradient(to right, rgb(59, 173, 99),rgb(116, 227, 153))'
+      } else if (entry.target.id === "greensilver") {
+        bodyEl.style.backgroundImage = 'linear-gradient(to right, rgb(59, 173, 99),rgb(116, 227, 153))'
 
-            leftside.innerHTML=""
-            leftside.innerHTML=`
+        leftside.innerHTML = ""
+        leftside.innerHTML = `
               <div id="leftheading">
                     <h2 >Elegant Timepieces</h2>
                     <h3>Choose Luxury<span>Choose Us</span></h3>
@@ -90,10 +90,10 @@ const callback = (entries) => {
                   </div>
               `
 
-          } else{
-            bodyEl.style.backgroundImage = 'linear-gradient(to right, rgb(245, 98, 93),rgb(255, 168, 148))'
-            leftside.innerHTML=""
-            leftside.innerHTML=`
+      } else {
+        bodyEl.style.backgroundImage = 'linear-gradient(to right, rgb(245, 98, 93),rgb(255, 168, 148))'
+        leftside.innerHTML = ""
+        leftside.innerHTML = `
               <div id="leftheading">
                     <h2 >Refined Timepieces</h2>
                     <h3>Choose Luxury<span>Choose Us</span></h3>
@@ -106,8 +106,8 @@ const callback = (entries) => {
                     <img src="./image/you tube.png" alt="YouTube">
                   </div>
               `
-          }
       }
+    }
   });
 };
 

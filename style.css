@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* CSS RESETING */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
-body>*{
+
+body>* {
     overflow-x: hidden;
 }
-header{
-  display: flex;
-  justify-content: center;
-  
-  
+
+header {
+    display: flex;
+    justify-content: center;
+
+
 }
-nav{
+
+nav {
     display: flex;
     width: 80vw;
     height: 15vh;
@@ -24,18 +28,19 @@ nav{
     justify-content: space-between;
     align-items: end;
     z-index: 10;
-    
+
 }
 
-#logo{
-    width:30% ;
+#logo {
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3px;
-    
+
 }
-#navcontent{
+
+#navcontent {
     width: 40%;
     display: flex;
     justify-content: space-around;
@@ -43,189 +48,219 @@ nav{
 
 }
 
-#logoname{
+#logoname {
     font-size: small;
 }
-#navcontent>button{
+
+#navcontent>button {
     background-color: black;
     color: antiquewhite;
     border-radius: 20px;
-   border: none;
+    border: none;
     padding: 10px 20px;
     outline: none;
 }
 
-#bodycontent{
+#bodycontent {
     width: 100vw;
     height: 100vh;
-  
+
 }
-.splide{
+
+.splide {
     width: 30vw;
     height: 30vh;
 }
-.splide__slide>img{
+
+.splide__slide>img {
     width: 20vw;
     height: 55vh;
 }
-#body{
- 
+
+#body {
+
     display: flex;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    padding:   10%;
-    
+    padding: 10%;
+
 
 }
-#leftside{
+
+#leftside {
     width: 50%;
 }
 
-#rightside{
+#rightside {
     width: 40%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.splide{
-    
+
+.splide {
+
     width: 23vw;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#leftside{
+
+#leftside {
     width: 50%;
     height: 90%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
-#leftheading{
+
+#leftheading {
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
 }
-#leftheading>h2{
+
+#leftheading>h2 {
     color: rgb(245, 243, 240);
     font-size: 30px;
     font-weight: 900;
     font-family: "Sofia Sans", sans-serif;
 }
-#leftheading>h3{
+
+#leftheading>h3 {
     color: rgb(252, 252, 252);
     font-weight: 800;
     font-family: "Sofia Sans", sans-serif;
 }
-#leftheading>h3 span{
+
+#leftheading>h3 span {
     color: black;
-    font-weight:800 ;
+    font-weight: 800;
     margin-left: 1vw;
 }
-#leftside p{
+
+#leftside p {
     width: 70%;
     line-height: 1.8rem;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
 }
-#leftside h1{
-  color:#ffff;
-  font-size: 40px;
-}
-#icondiv{
-    display: flex;
-    
-    
-}
- #icondiv>*{
-   width: 3.2rem;
-   height: 3.2rem;
-   margin-right: 1rem;
-   border: 1px solid white;
-   padding: 14px;
-   border-radius: 50%;
 
-    
-} 
-@media screen and (max-width:810px){
-   
-    #navcontent{
+#leftside h1 {
+    color: #ffff;
+    font-size: 40px;
+}
+
+#icondiv {
+    display: flex;
+
+
+}
+
+#icondiv>* {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-right: 1rem;
+    border: 1px solid white;
+    padding: 14px;
+    border-radius: 50%;
+
+
+}
+
+@media screen and (max-width:810px) {
+
+    #navcontent {
         width: 60%;
     }
-    #leftside p{
+
+    #leftside p {
         width: 90%;
         line-height: 1.4rem;
     }
-    
-#leftheading>h2{
-    font-size: 25px;
+
+    #leftheading>h2 {
+        font-size: 25px;
+    }
+
+    #icondiv>* {
+        width: 2.2rem;
+        height: 2.2rem;
+        padding: 10px;
+
+    }
+
 }
-#icondiv>*{
-    width: 2.2rem;
-    height: 2.2rem;
-    padding: 10px;
-   
-}
-    
-}
-@media screen and (max-width:546px){
+
+@media screen and (max-width:546px) {
     #body {
         display: flex;
         flex-direction: column;
         width: fit-content;
     }
-    #leftside{
+
+    #leftside {
         width: 100%;
         margin-top: 15%;
         justify-content: center;
         align-items: center;
         height: 30rem;
-        
+
     }
+
     nav {
         align-items: flex-start;
         margin-top: 10px;
     }
+
     #rightside {
         width: 100vw;
 
     }
-    .splide{
+
+    .splide {
         width: 30%;
 
     }
 }
-@media screen and (max-width:500px){
-    #navcontent{
+
+@media screen and (max-width:500px) {
+    #navcontent {
         display: none;
     }
-    nav{
+
+    nav {
         display: flex;
         justify-content: start;
         align-items: center;
         margin-bottom: 10px;
         position: static;
     }
+
     #body {
         display: flex;
         flex-direction: column;
-        gap:20px
+        gap: 20px
     }
-    .splide img{
+
+    .splide img {
         width: 100%;
 
     }
-    #body{
-        gap:30px
+
+    #body {
+        gap: 30px
     }
-    #leftside{
-        gap:20px
+
+    #leftside {
+        gap: 20px
     }
-    header{
+
+    header {
         height: 5pvh;
         position: fixed;
     }
